@@ -5,10 +5,10 @@ import { ThemeSwitcher } from './ThemeSwitcher'
 const days = [62, 55, 72, 68, 81, 76, 84]
 
 const quickActions = [
-  { icon: MessageCircle, label: 'AI倾诉' },
-  { icon: CalendarCheck, label: '情绪打卡' },
-  { icon: UserRoundCheck, label: '找咨询师' },
-  { icon: HeartPulse, label: '健康同步' },
+  { icon: MessageCircle, label: 'AI 倾诉', note: '倾听你的心声' },
+  { icon: CalendarCheck, label: '情绪打卡', note: '记录每日心情' },
+  { icon: UserRoundCheck, label: '找咨询师', note: '专业陪伴支持' },
+  { icon: HeartPulse, label: '健康同步', note: '设备数据同步' },
 ]
 
 export function HomePage({ theme, language }) {
@@ -29,22 +29,24 @@ export function HomePage({ theme, language }) {
         <small>{en ? 'Good morning, Muheng' : '早上好，沐珩'}</small>
         <h1>{en ? 'How are you feeling today?' : '今天感觉怎么样？'}</h1>
       </div>
-      <span className="element-badge"><ThemeIcon size={20}/>{theme.cn}</span>
+      {theme.key === 'wood'
+        ? <span className="element-badge"><ThemeIcon size={20}/>{en ? 'Natural Healing' : '自然疗愈'}</span>
+        : <span className="element-badge"><ThemeIcon size={20}/>{theme.cn}</span>}
       {theme.key === 'wood' && <span className="wood-charm"><i/><b className="leaf-a"/><b className="leaf-b"/><b className="leaf-c"/><b className="leaf-d"/><b className="leaf-e"/><b className="flower-a"/><b className="flower-b"/></span>}
     </header>
 
     <section className="mood-card themed">
       <div>
         <span className="pill"><Sparkles size={13}/> {en ? 'Today' : '今日状态'}</span>
-        <h2>77</h2>
+        <h2>82</h2>
         <p>{en ? 'Emotional stability / 100' : '情绪稳定度 / 100'}</p>
       </div>
       <div className="mood-orb"><HeartPulse size={48}/></div>
     </section>
 
     <section className="quick-grid">
-      {actions.map(({ icon: Icon, label }) => <button className="quick" key={label}>
-        <Icon size={22}/><span>{label}</span>
+      {actions.map(({ icon: Icon, label, note }) => <button className="quick" key={label}>
+        <Icon size={22}/><span>{label}</span>{note && <small>{note}</small>}
       </button>)}
     </section>
 
@@ -199,12 +201,12 @@ function HomeChatCard({ language }) {
   const en = language === 'en'
   return <section className="home-card home-chat">
     <div className="home-card-title">
-      <div><b>{en ? 'AI Support Room' : 'AI 支持室'}</b><small>{en ? 'Memory on · therapist-tunable' : '记忆开启 · 心理医生可协作定制'}</small></div>
+      <div><b>{en ? 'AI Support Room' : 'AI 支持室'}</b><small>{en ? 'With you anytime · gentle understanding' : '随时陪伴，温柔理解'}</small></div>
       <span>{en ? 'Online' : '在线'}</span>
     </div>
     <div className="home-chat-body">
-      <div className="mini-chat ai">{en ? 'I remember your recent stress is mainly from project progress. Want to talk feelings first, or break down tasks?' : '我记得你最近压力主要来自项目推进。今天想先聊情绪，还是先拆任务？'}</div>
-      <div className="mini-chat user">{en ? 'Thank you for caring. Yesterday I planned to make progress on some React and quant projects, which may affect my mood fluctuations, so I’ll try to stay steady.' : '谢谢关心。昨天计划完成一些 React 和量化项目的进度，可能会影响到心情波动，我尽量保持稳定。'}</div>
+      <div className="mini-chat ai">{en ? 'I noticed you’ve been under more pressure lately. What made you feel anxious today?' : '我记得你最近压力比较大。想和我聊聊让你感到焦虑的事吗？'}</div>
+      <div className="mini-chat user">{en ? 'Work and life have felt a little out of balance lately. I haven’t been sleeping well.' : '最近工作和生活有点失衡，晚上总是睡不好。'}</div>
     </div>
     <div className="composer"><span>{en ? 'Type how you feel...' : '输入你的感受...'}</span><div><Mic size={16}/><Send size={16}/></div></div>
   </section>
@@ -215,7 +217,7 @@ function HomeTrackerCard({ language }) {
   return <section className="home-card tracker-card themed">
     <div className="home-card-title">
       <div><b>{en ? 'Mood Tracking' : '个人情绪追踪'}</b><small>{en ? 'Sleep, heart rate, nutrition, movement' : '睡眠、心率、饮食、运动联动'}</small></div>
-      <ChevronRight size={19}/>
+      <span>{en ? 'Balanced ↑' : '本周趋势：平稳↑'}</span>
     </div>
     <MoodWaveChart />
     <div className="home-metrics tracker-metrics">

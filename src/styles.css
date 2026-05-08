@@ -1186,3 +1186,66 @@
 .theme-wood .tracker-card.themed .tracker-metrics{grid-template-columns:repeat(4,1fr);gap:6px;margin-top:2px}.theme-wood .tracker-card.themed .tracker-metrics p{background:rgba(255,255,230,.08) !important;border:1px solid rgba(255,255,220,.10);border-radius:13px;padding:8px 3px;color:rgba(245,239,200,.88) !important;font-size:11px;line-height:1;white-space:nowrap}.theme-wood .tracker-card.themed .tracker-metrics svg{color:#f0dc98 !important}.theme-wood .tracker-card.themed .tracker-metrics em{display:none}
 .theme-wood .home-privacy,.theme-wood .home-card:not(.home-chat):not(.tracker-card):not(.themed){display:none !important}
 .theme-wood .bottom-nav{height:82px !important;background:rgba(218,218,205,.76) !important;border-top:1px solid rgba(255,255,255,.50) !important;box-shadow:0 -14px 28px rgba(67,69,58,.13),inset 0 1px 0 rgba(255,255,255,.45) !important}
+
+/* ---------- Screenshot restore pass: cream glass home ---------- */
+.theme-wood.phone{
+  background:
+    radial-gradient(circle at 82% 9%, rgba(255,228,162,.50), transparent 10%),
+    radial-gradient(circle at 18% 21%, rgba(255,255,247,.62), transparent 22%),
+    radial-gradient(circle at 52% 54%, rgba(255,255,240,.24), transparent 38%),
+    linear-gradient(180deg,#d9d7cc 0%,#c8c9bd 52%,#b7baad 100%) !important;
+  box-shadow:0 34px 84px rgba(41,43,36,.36),0 0 0 9px #777b70,inset 0 0 0 1px rgba(255,255,244,.45) !important;
+}
+.theme-wood.phone:before{
+  background:linear-gradient(180deg,rgba(255,255,246,.20),rgba(255,255,246,.05)),radial-gradient(circle at 28% 7%,rgba(255,255,255,.38),transparent 22%) !important;
+  opacity:1 !important;
+}
+.theme-wood.phone:after{
+  background:radial-gradient(circle at 75% 12%,rgba(255,225,143,.46),transparent 12%),radial-gradient(circle at 50% 46%,rgba(255,255,240,.18),transparent 42%) !important;
+}
+.theme-wood .topbar{height:54px;padding:25px 42px 0 !important;color:#5d604f !important;opacity:.95 !important}
+.theme-wood .topbar svg{width:22px;height:22px;stroke-width:1.9;filter:drop-shadow(0 1px 0 rgba(255,255,238,.65))}
+.theme-wood .page-scroll{height:calc(100% - 54px) !important;padding-bottom:94px !important}
+.theme-wood .home-dashboard{padding:0 36px 18px !important}
+.theme-wood .dashboard-head{padding:0 0 9px !important;min-height:128px !important;display:flex;align-items:flex-start;position:relative}
+.theme-wood .dashboard-head small{font-size:16px !important;color:#475343 !important;line-height:1 !important;font-weight:800 !important;letter-spacing:.2px}
+.theme-wood .dashboard-head h1{width:245px !important;margin:10px 0 0 !important;font-size:32px !important;line-height:1.06 !important;letter-spacing:-1.5px !important;color:#2d4033 !important;font-weight:950 !important;text-shadow:0 1px 0 rgba(255,255,242,.60),0 8px 18px rgba(42,47,39,.12) !important}
+.theme-wood .dashboard-head .element-badge{
+  right:0 !important;top:0 !important;width:auto !important;min-width:102px !important;height:42px !important;padding:0 13px !important;border-radius:18px !important;font-size:14px !important;gap:7px !important;color:#4d5c42 !important;
+  background:linear-gradient(145deg,rgba(255,255,247,.88),rgba(242,226,183,.64)) !important;
+  border:1px solid rgba(255,249,221,.88) !important;
+  box-shadow:0 0 24px rgba(255,224,143,.68),0 10px 20px rgba(94,79,49,.16),inset 2px 3px 7px rgba(255,255,255,.78),inset -5px -6px 12px rgba(142,111,58,.14) !important;
+}
+.theme-wood .dashboard-head .element-badge:after{bottom:-12px !important;width:8px !important;height:8px !important;background:#8e6b38 !important}
+.theme-wood .wood-charm{right:10px !important;top:50px !important;width:62px !important;height:88px !important;transform:rotate(8deg) !important;z-index:7 !important}
+.theme-wood .wood-charm:before{top:-22px !important;height:26px !important}
+.theme-wood .wood-charm:after{left:13px !important;top:13px !important;width:34px !important;height:56px !important;border-radius:74% 0 74% 0 !important}
+.theme-wood .wood-charm i{left:30px !important;top:18px !important;height:47px !important}
+.theme-wood .mood-card.themed{
+  height:188px !important;margin:0 0 17px !important;padding:23px 27px !important;border-radius:27px !important;
+  background:linear-gradient(115deg,rgba(255,255,255,.18),transparent 31%,rgba(255,255,255,.10) 72%,transparent),radial-gradient(circle at 80% 46%,rgba(255,255,226,.16),transparent 25%),linear-gradient(145deg,rgba(90,128,100,.80),rgba(50,88,66,.92) 56%,rgba(40,75,58,.94)) !important;
+  border:1px solid rgba(218,244,216,.36) !important;
+  box-shadow:0 0 36px rgba(236,228,188,.46),0 22px 40px rgba(26,49,35,.36),inset 2px 2px 0 rgba(255,255,255,.34),inset -15px -15px 28px rgba(12,34,24,.28),inset 11px 11px 26px rgba(255,255,255,.12) !important;
+}
+.theme-wood .mood-card.themed .pill{padding:8px 12px !important;font-size:14px !important;background:rgba(255,255,255,.18) !important;color:#edf1dd !important}
+.theme-wood .mood-card.themed h2{font-size:86px !important;line-height:.82 !important;margin:21px 0 8px !important;font-weight:500 !important;color:#fff6dd !important;text-shadow:0 0 16px rgba(255,245,206,.95),0 0 32px rgba(255,229,166,.52) !important}
+.theme-wood .mood-card.themed p{font-size:19px !important;color:rgba(255,248,226,.82) !important}
+.theme-wood .mood-orb{width:104px !important;height:104px !important;margin-right:2px !important;background:radial-gradient(circle at 34% 28%,rgba(255,255,255,.53),rgba(240,250,236,.18) 42%,rgba(38,68,58,.28) 72%) !important;box-shadow:0 0 24px rgba(255,247,204,.40),inset 0 0 22px rgba(255,255,255,.22) !important}
+.theme-wood .mood-orb svg{width:58px !important;height:58px !important;stroke-width:1.7 !important;color:#fff2c6 !important}
+.theme-wood .quick-grid{gap:12px !important;margin-bottom:14px !important}
+.theme-wood .quick{height:122px !important;border-radius:23px !important;padding:12px 7px !important;gap:5px !important;background:linear-gradient(145deg,rgba(255,255,249,.64),rgba(232,230,216,.38)) !important;border:1px solid rgba(255,255,255,.66) !important;box-shadow:0 0 18px rgba(255,246,211,.44),10px 13px 24px rgba(74,75,64,.16),inset 1px 1px 0 rgba(255,255,255,.72),inset -6px -7px 14px rgba(111,113,96,.12) !important;color:#354033 !important}
+.theme-wood .quick svg{width:31px !important;height:31px !important;color:#43533f !important;stroke-width:1.8 !important;margin-bottom:5px}
+.theme-wood .quick span{font-size:16px !important;line-height:1.05 !important;font-weight:900 !important;margin:0 !important;white-space:nowrap}
+.theme-wood .quick small{display:block;font-size:10px;line-height:1.15;color:#737765;font-weight:700;white-space:nowrap}
+.theme-wood .home-card{margin:13px 0 0 !important;border-radius:28px !important;background:linear-gradient(145deg,rgba(244,243,234,.58),rgba(222,221,209,.38)) !important;border:1px solid rgba(255,255,255,.62) !important;box-shadow:0 0 22px rgba(255,248,220,.30),12px 16px 30px rgba(70,71,60,.17),inset 1px 1px 0 rgba(255,255,255,.68),inset -8px -9px 18px rgba(92,96,79,.10) !important;padding:18px !important}
+.theme-wood .home-card-title{margin-bottom:13px !important}.theme-wood .home-card-title b{font-size:24px !important;line-height:1.05 !important;color:#354033 !important}.theme-wood .home-card-title small{font-size:13px !important;color:#747664 !important}.theme-wood .home-card-title span{background:rgba(255,255,247,.42) !important;color:#4b5d47 !important;border:1px solid rgba(255,255,255,.52) !important;box-shadow:inset 1px 1px 0 rgba(255,255,255,.62) !important}
+.theme-wood .home-chat{min-height:257px !important}.theme-wood .home-chat .mini-chat.ai{max-width:76% !important;margin-left:37px !important;background:rgba(255,255,249,.74) !important;color:#394238 !important;border-radius:18px !important;box-shadow:8px 10px 18px rgba(50,54,45,.10),inset 1px 1px 0 rgba(255,255,255,.70) !important}
+.theme-wood .home-chat .mini-chat.user{max-width:69% !important;background:#244f45 !important;color:#eff3df !important;border-radius:18px 18px 5px 18px !important;margin-top:8px !important;box-shadow:9px 11px 18px rgba(27,55,48,.24),inset 1px 1px 0 rgba(255,255,255,.14) !important}
+.theme-wood .composer{height:42px !important;border-radius:20px !important;margin-top:14px !important;background:rgba(255,255,247,.26) !important;color:#8a8a78 !important}
+.theme-wood .composer div{gap:12px}.theme-wood .composer div svg{width:25px !important;height:25px !important;padding:5px;border-radius:50%;background:radial-gradient(circle,#d8c395,#8b7550) !important;color:#fff4cd !important}.theme-wood .composer div svg:last-child{background:rgba(66,81,63,.28) !important;color:#42513e !important}
+.theme-wood .tracker-card.themed{height:178px !important;margin-top:14px !important;padding:18px 21px 13px !important;background:linear-gradient(115deg,rgba(255,255,255,.14),transparent 35%,rgba(255,255,255,.08) 73%,transparent),linear-gradient(145deg,rgba(52,90,68,.95),rgba(31,68,53,.98)) !important;border-radius:27px !important;color:#f2eed4 !important}
+.theme-wood .tracker-card.themed .home-card-title b{font-size:23px !important;color:#f3eed7 !important}.theme-wood .tracker-card.themed .home-card-title small{font-size:12px !important;color:rgba(243,238,215,.70) !important}.theme-wood .tracker-card.themed .home-card-title span{font-size:11px !important;color:#efe3b1 !important;background:rgba(255,255,230,.10) !important;border-color:rgba(255,255,230,.16) !important}
+.theme-wood .mood-wave-chart{height:80px !important;margin:0 0 2px !important}
+.theme-wood .tracker-card.themed .tracker-metrics{display:none !important}
+.theme-wood .bottom-nav{left:25px !important;right:25px !important;bottom:15px !important;width:auto !important;height:75px !important;border-radius:28px !important;background:rgba(235,234,222,.70) !important;border:1px solid rgba(255,255,255,.62) !important;padding:8px 9px 10px !important;box-shadow:0 0 24px rgba(255,244,202,.36),0 -8px 22px rgba(69,70,58,.12),inset 1px 1px 0 rgba(255,255,255,.72),inset -8px -8px 18px rgba(103,106,88,.10) !important}
+.theme-wood .bottom-nav button{font-size:12px !important;color:#3d453b !important;gap:4px !important}.theme-wood .bottom-nav button svg{width:23px !important;height:23px !important;stroke-width:1.8 !important}.theme-wood .bottom-nav button.active{width:58px !important;height:58px !important;border-radius:50% !important;background:radial-gradient(circle at 36% 25%,rgba(255,255,246,.80),rgba(203,186,143,.58)) !important;color:#5c5137 !important;box-shadow:0 0 22px rgba(255,220,139,.75),8px 10px 18px rgba(94,76,45,.16),inset 1px 1px 0 rgba(255,255,255,.75),inset -6px -7px 13px rgba(125,102,61,.12) !important}
