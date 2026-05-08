@@ -1111,7 +1111,7 @@
 .theme-wood .topbar{height:42px;padding:16px 28px 0;color:#30382f;opacity:.72}
 .theme-wood .page-scroll{height:calc(100% - 42px);padding-bottom:96px;background:transparent}
 .theme-wood .home-dashboard{padding:0 21px 18px !important;position:relative;z-index:3}
-.theme-wood .dashboard-head{padding:4px 2px 15px !important;align-items:flex-start;min-height:108px;position:relative;z-index:4}
+.theme-wood .dashboard-head{padding:4px 2px 6px !important;align-items:flex-start;min-height:96px;position:relative;z-index:4}
 .theme-wood .dashboard-head small{font-size:16px !important;line-height:1;color:#50604e !important;font-weight:800 !important;letter-spacing:.1px;text-shadow:0 1px 0 rgba(255,255,245,.50)}
 .theme-wood .dashboard-head h1{width:235px;margin:8px 0 0 !important;font-size:28px !important;line-height:1.13;letter-spacing:-1px;color:#253328 !important;font-weight:950;text-shadow:0 1px 0 rgba(255,255,245,.52),0 8px 18px rgba(43,50,39,.10)}
 .theme-wood .dashboard-head .element-badge{
