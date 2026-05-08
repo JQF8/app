@@ -30,7 +30,7 @@ export function HomePage({ theme, language }) {
         <h1>{en ? 'How are you feeling today?' : '今天感觉怎么样？'}</h1>
       </div>
       {theme.key === 'wood'
-        ? <span className="element-badge"><ThemeIcon size={20}/>{en ? 'Natural Healing' : '自然疗愈'}</span>
+        ? <span className="element-badge"><ThemeIcon size={20}/>{en ? 'Natural Healing v5' : '自然疗愈 v5'}</span>
         : <span className="element-badge"><ThemeIcon size={20}/>{theme.cn}</span>}
       {theme.key === 'wood' && <span className="wood-charm"><i/><b className="leaf-a"/><b className="leaf-b"/><b className="leaf-c"/><b className="leaf-d"/><b className="leaf-e"/><b className="flower-a"/><b className="flower-b"/></span>}
     </header>
@@ -38,8 +38,8 @@ export function HomePage({ theme, language }) {
     <section className="mood-card themed">
       <div>
         <span className="pill"><Sparkles size={13}/> {en ? 'Today' : '今日状态'}</span>
-        <h2>82</h2>
-        <p>{en ? 'Emotional stability / 100' : '情绪稳定度 / 100'}</p>
+        <h2>88</h2>
+        <p>{en ? 'Visible update test / 100' : '新版测试 / 100'}</p>
       </div>
       <div className="mood-orb"><HeartPulse size={48}/></div>
     </section>
