@@ -30,7 +30,7 @@ export function HomePage({ theme, language }) {
         <h1>{en ? 'How are you feeling today?' : '今天感觉怎么样？'}</h1>
       </div>
       {theme.key === 'wood'
-        ? <span className="element-badge"><ThemeIcon size={20}/>{en ? 'Natural Healing' : '自然疗愈'}</span>
+        ? <span className="element-badge"><ThemeIcon size={20}/>{en ? 'Wood' : '木'}</span>
         : <span className="element-badge"><ThemeIcon size={20}/>{theme.cn}</span>}
       {theme.key === 'wood' && <span className="wood-charm"><i/><b className="leaf-a"/><b className="leaf-b"/><b className="leaf-c"/><b className="leaf-d"/><b className="leaf-e"/><b className="flower-a"/><b className="flower-b"/></span>}
     </header>
@@ -38,7 +38,7 @@ export function HomePage({ theme, language }) {
     <section className="mood-card themed">
       <div>
         <span className="pill"><Sparkles size={13}/> {en ? 'Today' : '今日状态'}</span>
-        <h2>82</h2>
+        <h2>77</h2>
         <p>{en ? 'Emotional stability / 100' : '情绪稳定度 / 100'}</p>
       </div>
       <div className="mood-orb"><HeartPulse size={48}/></div>
@@ -201,12 +201,12 @@ function HomeChatCard({ language }) {
   const en = language === 'en'
   return <section className="home-card home-chat">
     <div className="home-card-title">
-      <div><b>{en ? 'AI Support Room' : 'AI 支持室'}</b><small>{en ? 'With you anytime · gentle understanding' : '随时陪伴，温柔理解'}</small></div>
+      <div><b>{en ? 'AI Support Room' : 'AI 支持室'}</b><small>{en ? 'Memory on · therapist-tunable' : '记忆开启 · 心理医生可协作定制'}</small></div>
       <span>{en ? 'Online' : '在线'}</span>
     </div>
     <div className="home-chat-body">
-      <div className="mini-chat ai">{en ? 'I noticed you’ve been under more pressure lately. What made you feel anxious today?' : '我记得你最近压力比较大。想和我聊聊让你感到焦虑的事吗？'}</div>
-      <div className="mini-chat user">{en ? 'Work and life have felt a little out of balance lately. I haven’t been sleeping well.' : '最近工作和生活有点失衡，晚上总是睡不好。'}</div>
+      <div className="mini-chat ai">{en ? 'I remember your recent stress is mainly from project progress. Want to talk feelings first, or break down tasks?' : '我记得你最近压力主要来自项目推进。今天想先聊情绪，还是先拆任务？'}</div>
+      <div className="mini-chat user">{en ? 'Let’s talk feelings first. I didn’t sleep well last night.' : '先聊情绪，我昨晚没睡好。'}</div>
     </div>
     <div className="composer"><span>{en ? 'Type how you feel...' : '输入你的感受...'}</span><div><Mic size={16}/><Send size={16}/></div></div>
   </section>
@@ -217,7 +217,7 @@ function HomeTrackerCard({ language }) {
   return <section className="home-card tracker-card themed">
     <div className="home-card-title">
       <div><b>{en ? 'Mood Tracking' : '个人情绪追踪'}</b><small>{en ? 'Sleep, heart rate, nutrition, movement' : '睡眠、心率、饮食、运动联动'}</small></div>
-      <span>{en ? 'Balanced ↑' : '本周趋势：平稳↑'}</span>
+      <ChevronRight size={19}/>
     </div>
     <MoodWaveChart />
     <div className="home-metrics tracker-metrics">
