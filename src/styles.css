@@ -1366,3 +1366,64 @@
 .theme-wood .home-chat{height:220px !important;min-height:220px !important;padding:15px 15px 11px !important;border-radius:26px !important;background:linear-gradient(145deg,rgba(235,234,224,.58),rgba(211,210,198,.38)) !important;box-shadow:0 16px 28px rgba(75,72,60,.14),inset 1px 1px 0 rgba(255,255,255,.58),inset -9px -9px 18px rgba(100,97,82,.10) !important}.theme-wood .home-card-title b{font-size:20px !important;color:#333b35 !important}.theme-wood .home-card-title small{font-size:11px !important;color:#777467 !important}.theme-wood .home-card-title span{font-size:11px !important;color:#fff2d7 !important;background:linear-gradient(145deg,#a88955,#80673f) !important;border-color:rgba(255,238,181,.36) !important}.theme-wood .home-card-title span:before{display:none !important}.theme-wood .home-chat .mini-chat.ai{background:rgba(248,247,239,.84) !important;color:#40423b !important;box-shadow:6px 8px 15px rgba(54,52,44,.11),inset 1px 1px 0 rgba(255,255,255,.65) !important}.theme-wood .home-chat .mini-chat.user{background:#213c5d !important;color:#f1f4ed !important;max-width:78% !important;margin-right:18px !important;border-radius:18px 18px 4px 18px !important}.theme-wood .home-chat-body:after{display:none !important}.theme-wood .composer{height:36px !important;background:rgba(230,229,219,.45) !important;border-color:rgba(255,255,255,.35) !important}.theme-wood .composer div svg:first-child{background:radial-gradient(circle,#e3cf9b,#9a7b48) !important;color:#3b321f !important}.theme-wood .composer div svg:last-child{background:rgba(110,115,101,.32) !important;color:#454a40 !important}
 .theme-wood .tracker-card.themed{height:145px !important;margin-top:13px !important;background:linear-gradient(120deg,rgba(255,255,255,.13),transparent 35%,rgba(255,255,255,.06) 76%),linear-gradient(145deg,rgba(54,91,70,.96),rgba(31,66,52,.99)) !important}.theme-wood .tracker-card.themed .home-card-title b{font-size:20px !important}.theme-wood .tracker-card.themed .home-card-title small{font-size:10.5px !important}.theme-wood .tracker-card.themed .home-card-title svg{color:#efe3b4 !important}.theme-wood .mood-wave-chart{height:75px !important}.theme-wood .mood-wave-chart svg{height:70px !important;top:4px !important}
 .theme-wood .bottom-nav{height:67px !important;bottom:8px !important;background:rgba(222,221,211,.76) !important;border-radius:26px !important}.theme-wood .bottom-nav button.active{box-shadow:0 0 18px rgba(231,205,139,.52),7px 8px 15px rgba(92,79,52,.13),inset 1px 1px 0 rgba(255,255,255,.68),inset -6px -7px 12px rgba(118,101,66,.12) !important}
+
+/* ---------- Reference image 2 proportion lock: actual app layout, not generated image ---------- */
+@media(max-width:520px){
+  .stage{
+    padding:6px 0 !important;
+    min-height:100vh !important;
+    background:linear-gradient(180deg,#d0d0c6 0%,#b8bbb0 100%) !important;
+  }
+  .phone{
+    width:min(86vw,390px) !important;
+    height:calc(100vh - 10px) !important;
+    max-height:930px !important;
+    border-radius:44px !important;
+    overflow:hidden !important;
+    box-shadow:0 26px 70px rgba(36,39,33,.34),0 0 0 7px #777c72,inset 0 0 0 1px rgba(255,255,245,.38) !important;
+  }
+}
+.theme-wood .topbar{height:50px !important;padding:22px 30px 0 !important}
+.theme-wood .page-scroll{height:calc(100% - 50px) !important;padding-bottom:82px !important;overflow:hidden !important}
+.theme-wood .home-dashboard{padding:0 27px 8px !important}
+.theme-wood .dashboard-head{min-height:88px !important;padding:0 0 6px !important}
+.theme-wood .dashboard-head small{font-size:14px !important;line-height:1 !important;margin:0 !important;color:#697064 !important;font-weight:700 !important}
+.theme-wood .dashboard-head h1{font-size:27px !important;line-height:1.04 !important;letter-spacing:-1px !important;width:auto !important;max-width:270px !important;margin:8px 0 0 !important;white-space:nowrap !important;color:#344139 !important}
+.theme-wood .dashboard-head .element-badge{top:0 !important;right:0 !important;width:70px !important;min-width:70px !important;height:38px !important;border-radius:17px !important;font-size:18px !important;padding:0 10px !important}
+.theme-wood .wood-charm{right:9px !important;top:42px !important;width:48px !important;height:68px !important;transform:rotate(8deg) !important}
+.theme-wood .wood-charm:before{top:-16px !important;height:20px !important}
+.theme-wood .mood-card.themed{height:148px !important;margin-bottom:13px !important;padding:17px 22px !important;border-radius:26px !important}
+.theme-wood .mood-card.themed .pill{font-size:12px !important;padding:6px 10px !important}
+.theme-wood .mood-card.themed h2{font-size:67px !important;margin:16px 0 2px !important;letter-spacing:-2px !important}
+.theme-wood .mood-card.themed p{font-size:15px !important}
+.theme-wood .mood-orb{width:88px !important;height:88px !important;margin-right:0 !important}
+.theme-wood .mood-orb svg{width:48px !important;height:48px !important}
+.theme-wood .quick-grid{gap:9px !important;margin-bottom:13px !important}
+.theme-wood .quick{height:86px !important;border-radius:20px !important;padding:9px 3px 7px !important;gap:3px !important}
+.theme-wood .quick svg{width:24px !important;height:24px !important;margin-bottom:4px !important}
+.theme-wood .quick span{font-size:12.5px !important;white-space:nowrap !important}
+.theme-wood .quick small{display:none !important}
+.theme-wood .home-chat{height:244px !important;min-height:244px !important;margin-top:0 !important;padding:15px 15px 11px !important;border-radius:26px !important}
+.theme-wood .home-card-title{margin-bottom:10px !important}
+.theme-wood .home-card-title b{font-size:21px !important;line-height:1.05 !important}
+.theme-wood .home-card-title small{font-size:11px !important;line-height:1.2 !important}
+.theme-wood .home-card-title span{font-size:11px !important;padding:5px 10px !important}
+.theme-wood .home-chat-body{min-height:145px !important;padding-top:2px !important}
+.theme-wood .home-chat-body:before{display:none !important}
+.theme-wood .home-chat .mini-chat{font-size:13px !important;line-height:1.38 !important}
+.theme-wood .home-chat .mini-chat.ai{max-width:82% !important;margin-left:0 !important;padding:11px 13px !important;border-radius:17px !important}
+.theme-wood .home-chat .mini-chat.user{max-width:78% !important;margin-right:10px !important;margin-top:10px !important;padding:11px 13px !important;background:#203b5d !important;border-radius:18px 18px 4px 18px !important}
+.theme-wood .composer{height:38px !important;margin-top:0 !important;border-radius:18px !important}
+.theme-wood .tracker-card.themed{height:154px !important;margin-top:12px !important;padding:15px 18px 10px !important;border-radius:27px !important}
+.theme-wood .tracker-card.themed .home-card-title b{font-size:20px !important}
+.theme-wood .tracker-card.themed .home-card-title small{font-size:10.5px !important}
+.theme-wood .mood-wave-chart{height:82px !important;margin:0 !important}
+.theme-wood .mood-wave-chart svg{height:76px !important;top:4px !important}
+.theme-wood .bottom-nav{height:66px !important;left:21px !important;right:21px !important;bottom:8px !important;border-radius:26px !important;padding:6px 8px 7px !important}
+.theme-wood .bottom-nav button{font-size:10.5px !important;gap:3px !important}
+.theme-wood .bottom-nav button svg{width:20px !important;height:20px !important}
+.theme-wood .bottom-nav button.active{width:50px !important;height:50px !important}
+
+/* ---------- Reference image 2 proportion lock micro-adjust: title-to-card gap ---------- */
+.theme-wood .dashboard-head{min-height:71px !important}
+.theme-wood .mood-card.themed{height:164px !important}
