@@ -1497,3 +1497,145 @@ body{
     linear-gradient(180deg,#ddded2 0%,#d3d8ca 48%,#c3cbbb 100%) !important;
   background-blend-mode:soft-light,normal,normal,normal;
 }
+
+/* ---------- Thick premium glassmorphism system ---------- */
+:root{
+  --glass-fill:linear-gradient(145deg,rgba(255,255,255,.58),rgba(239,243,232,.28) 48%,rgba(188,204,184,.18));
+  --glass-fill-strong:linear-gradient(145deg,rgba(255,255,255,.70),rgba(245,246,236,.36) 46%,rgba(164,184,160,.22));
+  --glass-border:rgba(255,255,255,.56);
+  --glass-border-soft:rgba(112,132,108,.18);
+  --glass-shadow:0 22px 48px rgba(47,56,45,.18),0 8px 18px rgba(47,56,45,.10),inset 0 1px 0 rgba(255,255,255,.82),inset 1px 0 0 rgba(255,255,255,.46),inset 0 -18px 32px rgba(92,112,88,.08);
+  --glass-shadow-hover:0 28px 58px rgba(47,56,45,.22),0 12px 24px rgba(47,56,45,.12),inset 0 1px 0 rgba(255,255,255,.88),inset 1px 0 0 rgba(255,255,255,.50),inset 0 -20px 36px rgba(92,112,88,.10);
+}
+.home-card,
+.detail-card,
+.chat-screen-card,
+.ai-status-card,
+.match-card,
+.doctor-card,
+.profile-head,
+.setting-item,
+.metric-item,
+.score-card,
+.home-privacy,
+.tracker-card,
+.tone-card,
+.center-card,
+.home-focus-card,
+.theme-row button,
+.quick,
+.composer,
+.chat-input-bar,
+.chat-tools button,
+.match-card button,
+.home-two-actions button,
+.language-toggle button,
+.bottom-nav{
+  position:relative;
+  overflow:hidden;
+  background:var(--glass-fill) !important;
+  backdrop-filter:blur(24px) saturate(135%) !important;
+  -webkit-backdrop-filter:blur(24px) saturate(135%) !important;
+  border:1px solid transparent !important;
+  background-clip:padding-box !important;
+  box-shadow:var(--glass-shadow) !important;
+}
+.home-card::before,
+.detail-card::before,
+.chat-screen-card::before,
+.ai-status-card::before,
+.match-card::before,
+.doctor-card::before,
+.profile-head::before,
+.setting-item::before,
+.metric-item::before,
+.score-card::before,
+.home-privacy::before,
+.tracker-card::before,
+.tone-card::before,
+.center-card::before,
+.quick::before,
+.theme-row button::before,
+.composer::before,
+.chat-input-bar::before,
+.bottom-nav::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  padding:1px;
+  pointer-events:none;
+  background:linear-gradient(145deg,rgba(255,255,255,.86),rgba(255,255,255,.24) 38%,rgba(112,132,108,.24) 72%,rgba(255,255,255,.40));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+}
+.home-card::after,
+.detail-card::after,
+.chat-screen-card::after,
+.ai-status-card::after,
+.match-card::after,
+.doctor-card::after,
+.profile-head::after,
+.score-card::after,
+.tracker-card::after,
+.quick::after{
+  content:'';
+  position:absolute;
+  left:10%;
+  right:10%;
+  top:0;
+  height:38%;
+  pointer-events:none;
+  border-radius:999px;
+  background:linear-gradient(180deg,rgba(255,255,255,.34),rgba(255,255,255,0));
+  filter:blur(10px);
+  opacity:.72;
+}
+.quick,
+.theme-row button,
+.chat-tools button,
+.match-card button,
+.home-two-actions button,
+.language-toggle button{
+  background:var(--glass-fill-strong) !important;
+  color:color-mix(in srgb,var(--ink),transparent 12%) !important;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+}
+.quick:active,
+.theme-row button:active,
+.chat-tools button:active,
+.match-card button:active,
+.home-two-actions button:active,
+.language-toggle button:active{transform:translateY(1px) scale(.99)}
+.quick:hover,
+.theme-row button:hover,
+.chat-tools button:hover,
+.match-card button:hover,
+.home-two-actions button:hover,
+.language-toggle button:hover{box-shadow:var(--glass-shadow-hover) !important}
+.theme-row button.active,
+.language-toggle button.active,
+.bottom-nav button.active,
+.chat-tools button,
+.match-card button,
+.home-two-actions button:first-child{
+  background:linear-gradient(145deg,color-mix(in srgb,var(--primary),white 18%),color-mix(in srgb,var(--primary),transparent 8%) 52%,color-mix(in srgb,var(--primary),black 10%)) !important;
+  color:white !important;
+  box-shadow:0 24px 44px var(--glow),0 10px 22px rgba(47,56,45,.16),inset 0 1px 0 rgba(255,255,255,.52),inset 0 -18px 30px rgba(0,0,0,.10) !important;
+}
+.mood-card.themed,
+.theme-wood .mood-card.themed{
+  backdrop-filter:blur(26px) saturate(145%) !important;
+  -webkit-backdrop-filter:blur(26px) saturate(145%) !important;
+  border:1px solid transparent !important;
+  box-shadow:0 26px 54px rgba(31,57,43,.30),0 10px 22px rgba(31,57,43,.16),inset 0 1px 0 rgba(255,255,255,.54),inset 1px 0 0 rgba(255,255,255,.22),inset 0 -22px 38px rgba(0,0,0,.10) !important;
+}
+.mood-card.themed::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  pointer-events:none;
+  background:linear-gradient(145deg,rgba(255,255,255,.30),transparent 42%,rgba(255,255,255,.10));
+}
