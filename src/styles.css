@@ -1744,3 +1744,75 @@ body{
 .bottom-nav button.active svg{filter:none !important;color:#6a5f48 !important}
 .theme-wood .page-scroll{padding-bottom:88px !important}
 .theme-wood .bottom-nav{bottom:12px !important;height:66px !important;border-radius:28px !important}
+
+/* ---------- Layout proportion pass: thicker spacing, looser gaps, softer radii ---------- */
+.home-dashboard{gap:0}
+.mood-card.themed,
+.theme-wood .mood-card.themed{
+  padding:28px 32px !important;
+  min-height:180px !important;
+  border-radius:34px !important;
+}
+.theme-wood .mood-card.themed{height:180px !important;margin-bottom:20px !important}
+.home-chat,
+.theme-wood .home-chat{
+  padding:26px 27px 22px !important;
+  min-height:270px !important;
+  height:auto !important;
+  border-radius:34px !important;
+}
+.quick-grid,
+.theme-wood .quick-grid{
+  gap:16px !important;
+  margin:0 4px 22px !important;
+}
+.quick,
+.theme-wood .quick{
+  min-height:96px !important;
+  height:96px !important;
+  border-radius:28px !important;
+  padding:16px 8px 13px !important;
+}
+.home-card,
+.detail-card,
+.chat-screen-card,
+.ai-status-card,
+.match-card,
+.doctor-card,
+.profile-head,
+.setting-item,
+.metric-item,
+.score-card,
+.home-privacy,
+.tracker-card,
+.tone-card,
+.center-card,
+.home-focus-card{
+  border-radius:32px !important;
+}
+button,
+.composer,
+.chat-input-bar,
+.chat-tools button,
+.match-card button,
+.home-two-actions button,
+.language-toggle button,
+.theme-row button{
+  border-radius:24px !important;
+}
+.mini-chat,
+.chat-line{
+  border-radius:24px !important;
+  padding:15px 16px !important;
+}
+.composer,
+.theme-wood .composer{height:46px !important;border-radius:24px !important}
+.tracker-card.themed,
+.theme-wood .tracker-card.themed{
+  padding:24px 26px 20px !important;
+  min-height:178px !important;
+  height:auto !important;
+  border-radius:34px !important;
+}
+.bottom-nav,
+.theme-wood .bottom-nav{border-radius:32px !important}
