@@ -1462,3 +1462,38 @@
 .theme-wood .tracker-card.themed{height:156px !important;margin-top:13px !important;padding:15px 18px 10px !important;border-radius:26px !important}
 .theme-wood .mood-wave-chart{height:82px !important;margin:0 !important}
 .theme-wood .bottom-nav{height:69px !important;left:16px !important;right:16px !important;bottom:0 !important;border-radius:25px !important;padding:6px 8px 7px !important}
+
+/* ---------- Global tactile earth-tone background grain ---------- */
+:root{
+  --surface-grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.78' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='table' tableValues='0 .18'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+body{
+  background-color:#d8dbcf;
+  background-image:
+    var(--surface-grain),
+    radial-gradient(circle at 16% 8%,rgba(246,244,231,.58),transparent 30%),
+    radial-gradient(circle at 82% 24%,rgba(141,157,132,.26),transparent 34%),
+    linear-gradient(135deg,#e2e2d7 0%,#d4d9cb 45%,#c5ccbd 100%);
+  background-blend-mode:soft-light,normal,normal,normal;
+}
+.stage{
+  background-image:
+    var(--surface-grain),
+    radial-gradient(circle at 18% 10%,rgba(248,246,235,.62),transparent 25%),
+    radial-gradient(circle at 78% 22%,rgba(118,143,119,.22),transparent 31%),
+    radial-gradient(circle at 34% 86%,rgba(235,229,211,.30),transparent 35%),
+    linear-gradient(135deg,#e0e0d5 0%,#d1d7c8 50%,#c1cab9 100%) !important;
+  background-blend-mode:soft-light,normal,normal,normal,normal;
+}
+.phone.theme-wood,
+.phone.theme-water,
+.phone.theme-metal,
+.phone.theme-fire,
+.phone.theme-earth{
+  background-image:
+    var(--surface-grain),
+    radial-gradient(circle at 68% 10%,rgba(255,246,220,.30),transparent 20%),
+    radial-gradient(circle at 18% 72%,rgba(255,255,246,.22),transparent 28%),
+    linear-gradient(180deg,#ddded2 0%,#d3d8ca 48%,#c3cbbb 100%) !important;
+  background-blend-mode:soft-light,normal,normal,normal;
+}
