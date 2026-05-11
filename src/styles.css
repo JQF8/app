@@ -1427,3 +1427,38 @@
 /* ---------- Reference image 2 proportion lock micro-adjust: title-to-card gap ---------- */
 .theme-wood .dashboard-head{min-height:71px !important}
 .theme-wood .mood-card.themed{height:164px !important}
+
+/* ---------- Step 1 only: geometry / spacing alignment to image 2 ---------- */
+@media(max-width:520px){
+  .stage{padding:0 !important}
+  .phone{
+    width:min(88vw,390px) !important;
+    height:100vh !important;
+    max-height:none !important;
+    border-radius:42px !important;
+    overflow:hidden !important;
+  }
+}
+.theme-wood .topbar{height:50px !important;padding:22px 30px 0 !important}
+.theme-wood .page-scroll{height:calc(100% - 50px) !important;padding-bottom:78px !important;overflow:hidden !important}
+.theme-wood .home-dashboard{padding:0 27px 6px !important}
+.theme-wood .dashboard-head{min-height:68px !important;padding:0 0 4px !important}
+.theme-wood .dashboard-head h1{font-size:27px !important;line-height:1.04 !important;margin:8px 0 0 !important;white-space:nowrap !important;max-width:272px !important}
+.theme-wood .dashboard-head .element-badge{top:0 !important;right:0 !important;width:70px !important;min-width:70px !important;height:38px !important}
+.theme-wood .wood-charm{right:9px !important;top:42px !important;width:48px !important;height:68px !important}
+.theme-wood .mood-card.themed{height:162px !important;margin:0 0 15px !important;padding:17px 22px !important;border-radius:26px !important}
+.theme-wood .mood-card.themed h2{font-size:67px !important;margin:16px 0 2px !important}
+.theme-wood .mood-orb{width:88px !important;height:88px !important;margin-right:0 !important}
+.theme-wood .quick-grid{gap:10px !important;margin-bottom:15px !important}
+.theme-wood .quick{height:85px !important;border-radius:20px !important;padding:9px 3px 7px !important}
+.theme-wood .quick span{font-size:12.5px !important;white-space:nowrap !important}
+.theme-wood .quick small{display:none !important}
+.theme-wood .home-chat{height:246px !important;min-height:246px !important;margin-top:0 !important;padding:15px 15px 10px !important;border-radius:26px !important}
+.theme-wood .home-card-title{margin-bottom:10px !important}
+.theme-wood .home-chat-body{min-height:147px !important;padding-top:2px !important}
+.theme-wood .home-chat .mini-chat.ai{max-width:82% !important;margin-left:0 !important;padding:11px 13px !important}
+.theme-wood .home-chat .mini-chat.user{max-width:78% !important;margin-right:9px !important;margin-top:10px !important;padding:11px 13px !important}
+.theme-wood .composer{height:38px !important;margin-top:0 !important;border-radius:18px !important}
+.theme-wood .tracker-card.themed{height:156px !important;margin-top:13px !important;padding:15px 18px 10px !important;border-radius:26px !important}
+.theme-wood .mood-wave-chart{height:82px !important;margin:0 !important}
+.theme-wood .bottom-nav{height:69px !important;left:16px !important;right:16px !important;bottom:0 !important;border-radius:25px !important;padding:6px 8px 7px !important}
